@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+body {
+    text-align:center;
+    background-image : url('C:/Users/HP/Desktop/login/images/nature2.jpg');
+    padding:120px 120px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1 {
+    color:darkcyan;
+    font-family: Courier New;
+    text-align:center;
+    padding:40px 40px;
+    font-size: 40px;
+}
+label {
+    color:darkcyan;
+    font-size:20px;
+    
+}
+input {
+    border:3px solid;
+    margin:7px;
+    border-radius: 8px;
+    width: 100%;
+    height: 10%;
+}
+button {
+    color:white;
+    background-color:darkcyan;
+    margin:30px;
+    height:30px;
+    opacity:0.8;
+    border-radius: 6px;
+    width: 70px;
+    cursor: pointer;
+
+}
+.Div1 {
+    color:rebeccapurple;
+    background-color:black;
+    padding:30px;
+    width: fit-content;
+    margin:auto;
+    opacity: 0.6;
+    border-radius: 25px;
+    
+}
+a {
+    color:white;
+    font-size: 17px;
+    text-align:center;
+   
+}
+img {
+    height: 40px;
+    width: 150px;
+    opacity: 30;
+}
+
+
+</style>
+</head>
+<script>
+function page(){
+    var a = document.getElementById("email").value;
+  var b = document.getElementById("psw").value;
+  console.log(a , b)
+}
+</script>
+<body>
+<Div class="Div1">
+<h1>LOGIN </h1>
+<label for="email">Email:</label><br>
+<input type="text" placeholder="Enter Your Email" id="email"><br>
+<label for="psw">Password:</label><br>
+<input type="text" placeholder="Enter Password" id="psw" ><br>
+<button type="submit" onclick="page()">login</button>
+<button type="button" class="cancelbtn">cancel</button><br>
+<a onclick="page()" href="">Forget Password? </a><br><br>
+</Div>
+</form>
+</body>
+</html>
